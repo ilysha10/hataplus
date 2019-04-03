@@ -1,0 +1,373 @@
+@import url(font.css);
+body{
+    font: 14px Arial, sans-serif;
+    margin: 0;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 960px;
+}
+.column{
+    position: relative;
+    float: left;
+    margin-right: 28px;
+    width: 219px;
+}
+.column p{
+    display: inline-block;
+    width: 100%;
+}
+.call-to-action{
+    margin-right: 0;
+}
+.topline{
+    padding: 21px 0;
+    width: 100%;
+    font-size: 0;
+    background-color: #1f1f56;
+}
+.topline ul{
+    padding-left: 0;
+}
+.topline li{
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+}
+.menu{
+    float: left;
+}
+.menu a{
+    color: #b1b1d2;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #fd8300;
+}
+.menu li{
+    display: inline-block;
+    padding-right: 24px;
+}
+.social{
+    float: right;
+}
+.social li{
+    display: inline-block;
+    padding-left: 22px;
+    vertical-align: middle;
+}
+.social a{
+    display: block;
+    height: 19px;
+    width: 19px;
+    background: url(../img/sprite.png) no-repeat left top;
+}
+.social .fb{
+    background-position: -40px -21px; 
+    width: 10px;
+}
+.social .fb:hover{
+    background-position: -40px 0px;
+}
+.social .inst{
+    background-position: -20px -21px; 
+}
+.social .inst:hover{
+    background-position: -20px 0px;
+}
+.social .tw{
+    background-position: 0px -21px; 
+    width: 18px;
+    height: 15px;
+}
+.social .tw:hover{
+    background-position: 0px 0px;
+}
+.header-contacts{
+    font-size: 0;
+    padding: 32px 0;
+}
+.header-contacts p{
+    margin: 0;
+    padding-left: 48px;
+}
+.phone-ico,
+.gmail-ico{
+    position: relative;
+}
+.phone-ico::before{
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: -28px;
+    top: 2px;
+    background: url(../img/sprite.png) no-repeat -38px -42px;
+}
+.phones{
+    padding: 3px 0;
+    font-size: 18px;
+}
+.phones a{
+    text-decoration: none;
+    color: #25252c;
+    font: bold 18px Arial;
+}
+.gmail-ico::before{
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 13px;
+    left: -28px;
+    top: 3px;
+    background: url(../img/sprite.png) no-repeat -20px -42px;
+}
+.skype-ico{
+    position: relative;
+    text-decoration: none;
+}
+.skype-ico::before{
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    left: -28px; 
+    background: url(../img/sprite.png) no-repeat 0px -42px;
+}
+.messengers{
+    padding: 3px 0;
+    font-size: 16px;
+}
+.messengers a{
+    color: #25252c;
+    font: 16px;
+}
+.messengers p:first-child,
+.phones p:first-child{
+    margin-bottom: 10px;
+}
+.call-to-action{
+    float: right;
+    display: inline-block;
+    padding: 16px 27px;
+    color: #25252c;
+    text-decoration: none;
+    font: bold 16px Arial;
+    border-radius: 30px;
+    border: 2px solid #fd8300;
+}
+.call-to-action:hover{
+    color: white;
+    background: #fd8300;
+}
+.special-offer{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 58px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/special-offer.png);
+}
+.special-offer h2{
+    margin: 0;
+    color: #fff; 
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+}
+.special-offer h5{
+    margin: 0;
+    padding: 18px 0;
+    color: #fff;
+    font-size: 14px;
+}
+.special-offer p{
+    margin: 0;
+    color: #fd8300;
+    font-size: 24px;
+    font-weight: bold;
+}
+.special-offer sup{
+    font-size: 16px;
+}
+.special b{
+    font-size: 40px;
+}
+.main a{
+    display: block;
+}
+.aside-project-catagory{
+    margin: 0;
+    color: #fff;
+    background-color: #1f1f56;
+}
+.main-menu > li > a::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 10px;
+    top: 17px;
+    background: url(../img/sprite.png) no-repeat -50px -5px;
+}
+.main-menu .active::before{
+    background-position: -52px -26px ;
+}
+.main-menu{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: #e4e4ec;
+}
+.main-menu > li > a{
+    color: #25252c;
+    border-top: 1px solid #cecedd;
+}
+.main-menu a{
+    text-decoration: none;
+    position: relative;
+}
+.main-menu li{
+    text-align: left;
+}
+.main-menu a{
+    padding: 14px 0 14px 14px;
+}
+.main-menu .active{
+    color: #fff;
+    background: #fd8300;
+}
+.sub-menu{
+    padding: 0;
+}
+.sub-menu li a{
+    padding-left: 30px;
+}
+.sub-menu li a{
+    color: #666;
+}
+.main-menu li a:hover{
+    background: #cecedd;
+}
+.aside{
+    float: right;
+    width: 219px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.aside p{
+    padding: 14px 0 14px 14px;
+    font: 16px 'Roboto Slab';
+}
+.aside li{
+    list-style: none;
+}
+.main-content{
+    padding-bottom: 32px;
+    width: 713px;
+    border-bottom: 1px solid #e4e4ec;
+}
+.main-content h1{
+    margin: 0 0 26px;
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+}
+.main-content p{
+    color: #666;
+    line-height: 24px;
+}
+.main-content a{
+    display: inline;
+    color: #fd8300;
+    font-weight: bold;
+}
+.main-content a:hover{
+    text-decoration: none;
+}
+.popular-projects{
+    margin-bottom: 46px;
+    color: #9999a6;
+    font: 13px/18px Arial, sans-serif;
+}
+.popular-projects a{
+    text-decoration: none;
+}
+.popular-projects h3{
+    color: #24242b;
+    font-size: 24px;
+}
+.popular-projects h4{
+    margin: 0;
+    color:#1f1f56;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.popular-projects p{
+    margin: 0;
+    margin-bottom: 4px;
+}
+.popular-projects p:first-child{
+    margin: 12px 0 7px 0;
+}
+.project-link{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.project-link:hover{
+    box-shadow: 0 0 10px rgba(31,31,86,0.3);
+}
+.project-link:hover~a{
+    text-decoration: underline;
+}
+.footer-contacts{
+    padding: 40px 0 30px 0;
+    background-color:#ededf5;
+}
+.footer-contacts p{
+    margin: 0;
+}
+.footer-contacts li{
+    list-style: none;
+}
+.footer-contacts .list-of-company a,
+.list-of-house a{
+    color: #666;
+    line-height: 26px;
+}
+.footer-contacts .column:last-child{
+    margin-right: 0;
+}
+.list-of-house{
+    float: left;
+}
+.list-of-company a,
+.list-of-house a{
+    text-decoration: none;
+}
+.list-of-house ul{
+    margin: 0;
+    padding-left: 0;
+}
+.list-of-company{
+    float: left;
+}
+.list-of-company ul{
+    margin: 0;
+    padding: 0;
+}
+.copyright{
+    padding: 16px 0;
+    color: #9999a6;
+    font-size: 13px;
+    text-align: center;
+    background-color: #dcdce6;
+}
