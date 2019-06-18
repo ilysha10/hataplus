@@ -1,7 +1,173 @@
 @import url(font.css);
 body{
     font: 14px Arial, sans-serif;
+    color: #666;
+}
+figcaption,
+figure,
+body,
+aside,
+header,
+main,
+footer,
+section{
     margin: 0;
+}
+.contact-wrapper h3{
+    margin: 0 0 20px;
+}
+.contact-wrapper iframe{
+    height: 295px;
+    width: 96%;
+    border: none;
+}
+fieldset{
+    border: none;
+    padding: 10px 0 45px;
+}
+.contact-wrapper .button{
+    display: inline-block;
+    background-color: #fd8300;
+    color: #fff;
+    padding: 18px 30px;
+    width: 140px;
+    border-radius: 25px;
+    font-style: normal;
+}
+.contact-wrapper .button:hover{
+    background-color: #ae5b00;
+    cursor: pointer;
+}
+.checkbox{
+    position: absolute;
+    display: none;
+}
+.checkbox+label{
+    padding-left: 57px;
+    position: relative;
+}
+.checkbox+label::before{
+    content:"";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid #c4c4d3;
+    border-radius: 2px;
+    top: -2px;
+    left: 29px;
+}
+.checkbox:checked+label::after{
+    content: "";
+    position: absolute;
+    border: 2px solid #1f1f56;
+    border-top-color: transparent;
+    border-right-color: transparent; 
+    transform: rotate(-45deg);
+    height: 2px;
+    width: 6px;
+    top: 1px;
+    left: 33px;
+}
+hr{
+    border-color: transparent;
+    border-bottom-color: #e4e4ec;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact-wrapper form{
+    text-align: justify;
+}
+.contact-wrapper form label input{
+    padding: 10px 15px;
+}
+.contact-wrapper label{
+    font-size: 13px;
+}
+.contact-wrapper input,
+.contact-wrapper textarea{
+    width: 100%;
+    font-size: 13px;
+    color: #9999a6;
+    border: 1px solid #dfdfe0;
+    border-radius: 3px;
+    font-weight: normal;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.contact-wrapper input{
+    margin-bottom: 10px;   
+}
+.contact-wrapper input::-webkit-input-placeholder,
+.contact-wrapper textarea::-webkit-input-placeholder{
+    font-style: italic;
+    color: #9999a6;
+    font-weight: normal;
+}
+textarea{
+    padding: 10px 13px;
+}
+.contact-wrapper .input {
+    width: 48%;
+}
+h1,
+h2,
+h3,
+h4{
+ color: #24242b;
+}
+.contact-wrapper,
+.contact-office,
+.contact-consultation{
+    display: inline-block;
+}
+address{
+    font-style: normal;
+    font-size: 0;
+}
+address p{
+    margin: 0;
+    font-size: 14px;
+}
+address h3{
+    font-size: 14px;
+}
+.contact-wrapper p{
+    margin-bottom: 13px;
+}
+.contact-wrapper{
+    vertical-align: top;
+    width: 50%;
+}
+.contact-consultation{
+    padding-left: 70px;
+}
+.contact-requsites{
+    margin: 0 auto;
+    width: 300px;
+    padding-left: 40px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead td{
+    padding: 19px 20px 16px;
+}
+.table tbody td{
+    padding: 16px 20px;
+    border-bottom: 1px solid #cecedd;
+}
+.table thead tr{
+    background-color: #1f1f56;
+    color: #ffffff;
+}
+.table tbody tr{
+    background-color: #e4e4ec;
+    color: #666666;
+}
+.table tbody tr:hover{
+    background-color: #fd8300;
+    color: #ffffff;
 }
 .clear:after{
 	content: "";
@@ -12,15 +178,14 @@ body{
     margin: 0 auto;
     width: 960px;
 }
+.column-wrapper{
+    margin: 0 -14px;
+}
 .column{
     position: relative;
     float: left;
-    margin-right: 28px;
+    margin: 0 14px;
     width: 219px;
-}
-.column p{
-    display: inline-block;
-    width: 100%;
 }
 .call-to-action{
     margin-right: 0;
@@ -88,11 +253,16 @@ body{
 .social .tw:hover{
     background-position: 0px 0px;
 }
-.header-contacts{
+header{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header-contacts,
+.footer-contacts{
     font-size: 0;
     padding: 32px 0;
 }
-.header-contacts p{
+.header-contacts p,
+.footer-contacts p{
     margin: 0;
     padding-left: 48px;
 }
@@ -277,16 +447,19 @@ body{
     font-size: 30px;
     font-family: 'Roboto Slab';
 }
-.main-content p{
-    color: #666;
-    line-height: 24px;
+.special-h1{
+    font-size: 24px;
+    color: #24242b;
 }
-.main-content a{
+.special p{
+    line-height: 1.7em;
+}
+.link{
     display: inline;
     color: #fd8300;
     font-weight: bold;
 }
-.main-content a:hover{
+.link:hover{
     text-decoration: none;
 }
 .popular-projects{
@@ -346,23 +519,19 @@ body{
 .footer-contacts .column:last-child{
     margin-right: 0;
 }
-.list-of-house{
+.list-of-house,
+.list-of-company{
     float: left;
+    font-size: 14px;
 }
 .list-of-company a,
 .list-of-house a{
     text-decoration: none;
 }
-.list-of-house ul{
-    margin: 0;
-    padding-left: 0;
-}
-.list-of-company{
-    float: left;
-}
+.list-of-house ul,
 .list-of-company ul{
     margin: 0;
-    padding: 0;
+    padding-left: 0;
 }
 .copyright{
     padding: 16px 0;
